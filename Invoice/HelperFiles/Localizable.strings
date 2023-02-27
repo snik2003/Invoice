@@ -1,0 +1,157 @@
+//
+//  Localizable.strings
+//  Invoice
+//
+//  Created by Сергей Никитин on 28.11.2022.
+//
+
+// Common
+"common.title.alert" = "Attention!";
+"common.ok.button.alert" = "OK";
+"common.cancel.button.alert" = "Cancel";
+"common.delete.button.alert" = "Delete";
+"common.search.button.alert" = "Search";
+"common.dublicate.button.alert" = "Dublicate";
+"common.yes.button.alert" = "Yes";
+"common.no.button.alert" = "No";
+
+// Onboard screen
+"onboard.screen.next.button.title" = "Next";
+"onboard.screen.onboard1.title.text" = "Enter your business name";
+"onboard.screen.onboard1.hint.text" = "You can change it later in settings";
+"onboard.screen.onboard1.placeholder.text" = "Your business name";
+"onboard.screen.onboard2.title.text" = "Invoice easily";
+"onboard.screen.onboard2.hint.text" = "Create professional invoices quikly";
+
+// Paywall Screen
+"paywall.screen.title.label.text" = "Pro Features";
+"paywall.screen.purchase.button.title" = "Next";
+"paywall.screen.restore.button.title" = "Restore";
+"paywall.screen.terms.of.use.button.title" = "Terms of Use";
+"paywall.screen.privacy.policy.button.title" = "Privacy Policy";
+"paywall.screen.benefits.label.text" = "Unlimited access";
+"paywall.screen.benefit1.label.text" = "Invoices";
+"paywall.screen.benefit2.label.text" = "Clients";
+"paywall.screen.benefit3.label.text" = "Items";
+"paywall.screen.product.trial.period.added.text" = "free";
+"paywall.screen.product.lifetime.purchase.period.title" = "Forever";
+"paywall.screen.cancel.purchase.message.text" = "The purchase was cancelled,\nno payment was taken.";
+
+// Main Screen
+"main.screen.tabbar1.title" = "Invoices";
+"main.screen.tabbar2.title" = "Clients";
+"main.screen.tabbar3.title" = "Items";
+"main.screen.tabbar4.title" = "Reports";
+"main.screen.tabbar5.title" = "Settings";
+"main.screen.add.button.title" = "Add Invoice";
+"main.screen.search.button.title" = "Search Invoice";
+"main.screen.segmented.control.item1.title" = "All";
+"main.screen.segmented.control.item2.title" = "Not paid";
+"main.screen.segmented.control.item3.title" = "Paid";
+"main.screen.edit.invoice.button1.title" = "Preview & Send";
+"main.screen.edit.invoice.button2.title" = "Dublicate";
+"main.screen.edit.invoice.button3.title" = "Delete";
+"main.screen.edit.invoice.button4.title" = "Paid";
+"main.screen.edit.invoice.button5.title" = "Unpaid";
+"main.screen.search.bar.placeholder.text" = "Search";
+"main.screen.template.label.text" = "Invoice Template";
+"main.screen.clear.search.button.title" = "Clear Search Results";
+"main.screen.search.nothing.message.text" = "Sorry, nothing was found\nfor your search query!";
+
+// Add Invoice Screen
+"add.invoice.screen.back.button.title" = "New Invoice";
+"add.invoice.screen.back.button.title.2" = "Edit Invoice";
+"add.invoice.screen.back.button.title.3" = "Dublicate Invoice";
+"add.invoice.screen.send.button.title" = "Send";
+"add.invoice.screen.preview.button.title" = "Preview";
+"add.invoice.back.confirm.title.text" = "Save changes before closing?";
+"add.invoice.back.confirm.save.button.title" = "Save changes";
+"add.invoice.back.confirm.discard.button.title" = "Discard changes";
+"add.invoice.number.label.text" = "Invoice number";
+"add.invoice.issue.date.label.text" = "Issue date";
+"add.invoice.due.date.label.text" = "Due date";
+"add.invoice.client.label.text" = "Bill to";
+"add.invoice.add.client.button.title" = "+ Add client";
+"add.invoice.items.label.text" = "Items";
+"add.invoice.add.item.button.title" = "+ Add items";
+"add.invoice.subtotal.label.text" = "Subtotal";
+"add.invoice.discount.label.text" = "Discount";
+"add.invoice.tax.label.text" = "Tax";
+"add.invoice.total.label.text" = "Total";
+"add.invoice.balance.label.text" = "Grand Total";
+"add.invoice.paid.date.label.text" = "paid";
+"add.invoice.notes.text.view.placeholder" = "Notes";
+"add.invoice.no.client.error.text" = "Fill in the «Bill to» field in the form\nto add client to the invoice.";
+"add.invoice.no.items.error.text" = "Fill in the «Items» field in the form\nto add items to the invoice.";
+
+// Clients Screen
+"clients.screen.add.button.title" = "Add Client";
+"clients.screen.search.button.title" = "Search Client";
+
+// Clients List Screen
+"clients.list.screen.header.label.text" = "Add Client";
+
+// Add Client Screen
+"add.client.screen.header.label.text" = "New Client";
+"add.client.screen.edit.header.label.text" = "Edit Client";
+"add.client.screen.choose.button.title" = "Choose from contacts";
+"add.client.screen.import.contact.button.title" = "Import Contact";
+"add.client.screen.save.button.title" = "Save Client";
+"add.client.screen.name.label.text" = "Name";
+"add.client.screen.email.label.text" = "Email";
+"add.client.screen.phone.label.text" = "Phone";
+"add.client.screen.address.label.text" = "Address";
+"add.client.screen.no.permission.contacts.message.text" = "Permission was not granted for Contacts";
+"add.client.screen.save.contact.client.message.text" = "Do you want to import contact «$$CONTACT_TITLE$$» as your Client?";
+
+// Items Screen
+"items.screen.add.button.title" = "Create new Item";
+"items.screen.search.button.title" = "Search Item";
+
+// Items List Screen
+"items.list.screen.header.label.text" = "Add Item";
+
+// Add Item Screen
+"add.item.screen.header.label.text" = "New Item";
+"add.item.screen.edit.header.label.text" = "Edit Item";
+"add.item.screen.save.button.title" = "Save Item";
+"add.item.screen.name.label.text" = "Name";
+"add.item.screen.amount.label.text" = "Unit price";
+"add.item.screen.quantity.label.text" = "Quantity";
+"add.item.screen.discount.type.label.text" = "Discount Type";
+"add.item.screen.discount.value.label.text" = "Discount";
+"add.item.screen.taxable.label.text" = "Taxable";
+"add.item.screen.tax.type.label.text" = "Tax Type";
+"add.item.screen.tax.rate.label.text" = "Tax Rate";
+
+// Reports Screen
+"reports.screen.date.label.text" = "Year";
+"reports.screen.total.label.text" = "Total";
+"reports.screen.clients.count.label.text" = "Clients";
+"reports.screen.invoices.count.label.text" = "Invoices";
+"reports.screen.paid.amount.label.text" = "Paid";
+
+// Settings Screen
+"setting.screen.premium.button.title" = "Get Pro Features!";
+"setting.screen.business.header.label.text" = "Information about Your Business";
+"setting.screen.business.name.label.text" = "Business name";
+"setting.screen.business.number.label.text" = "Taxpayer Identifier";
+"setting.screen.business.email.label.text" = "Email";
+"setting.screen.business.phone.label.text" = "Phone";
+"setting.screen.business.website.label.text" = "Website";
+"setting.screen.business.address.label.text" = "Address";
+"setting.screen.tax.header.label.text" = "Default Tax values for the new Invoice";
+"setting.screen.default.tax.rate.label.text" = "Tax Rate";
+"setting.screen.buttons.header.label.text" = "About this App";
+"setting.screen.currency.header.label.text" = "Invoice Currency Settings";
+"setting.screen.currency.name.label.text" = "Currency";
+"setting.screen.select.currency.label.text" = "Select Currency";
+"setting.screen.currency.symbol.label.text" = "Currency Symbol";
+"setting.screen.contact.developer.button.title" = "Contact Us";
+"setting.screen.privacy.policy.button.title" = "Privacy Policy";
+"setting.screen.terms.of.use.button.title" = "Terms of Use";
+
+// Preview Screen
+"preview.screen.back.button.title" = "Preview";
+"preview.screen.send.button.title" = "Send Invoice";
+

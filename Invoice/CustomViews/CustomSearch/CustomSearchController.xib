@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSearchController" customModule="Invoice" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="yLU-nb-ZJD" id="ica-cu-KIZ"/>
+                <outlet property="cancelButtonBottomConstraint" destination="TqO-Yk-MXr" id="UU6-OP-VOg"/>
+                <outlet property="dopButton" destination="m4Q-ZZ-gqu" id="xLS-jW-eL0"/>
+                <outlet property="dopButtonHeightConstraint" destination="yt2-iX-XdD" id="hXu-Jx-zIj"/>
+                <outlet property="dopButtonTopConstraint" destination="veb-qQ-fQU" id="JP0-rU-1rj"/>
+                <outlet property="mainView" destination="q3A-RA-18i" id="8Dy-fp-jSZ"/>
+                <outlet property="mainViewCenterConstraint" destination="YVJ-nS-tZB" id="JoZ-cd-tkd"/>
+                <outlet property="mainViewLeadingConstraint" destination="qJL-bV-ubX" id="gv8-DS-dcc"/>
+                <outlet property="searchBar" destination="j10-uL-248" id="Oe7-aJ-CsR"/>
+                <outlet property="searchBarTopConstraint" destination="nfY-7u-cT8" id="NrA-Yu-wgr"/>
+                <outlet property="view" destination="5WS-fu-bv0" id="mgH-mr-HhI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5WS-fu-bv0">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3A-RA-18i" userLabel="Main View">
+                    <rect key="frame" x="0.0" y="328" width="414" height="240"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="j10-uL-248">
+                            <rect key="frame" x="28" y="24" width="358" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="3Zr-6x-6lG"/>
+                            </constraints>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="webSearch" keyboardAppearance="light" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                        </searchBar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4Q-ZZ-gqu" userLabel="Dop Button" customClass="SecondaryButton" customModule="Invoice" customModuleProvider="target">
+                            <rect key="frame" x="28" y="100" width="358" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="yt2-iX-XdD"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="dopButtonAction" destination="-1" eventType="touchUpInside" id="kPV-W7-xih"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLU-nb-ZJD" userLabel="Cancel Button" customClass="PrimaryButton" customModule="Invoice" customModuleProvider="target">
+                            <rect key="frame" x="28" y="164" width="358" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="AjG-el-KOV"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="cancelButtonAction" destination="-1" eventType="touchUpInside" id="cmu-Mh-Xsf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="yLU-nb-ZJD" firstAttribute="centerX" secondItem="q3A-RA-18i" secondAttribute="centerX" id="ShF-Jf-O4A"/>
+                        <constraint firstAttribute="bottom" secondItem="yLU-nb-ZJD" secondAttribute="bottom" constant="24" id="TqO-Yk-MXr"/>
+                        <constraint firstItem="m4Q-ZZ-gqu" firstAttribute="top" secondItem="j10-uL-248" secondAttribute="bottom" constant="24" id="Wej-lc-qJf"/>
+                        <constraint firstItem="m4Q-ZZ-gqu" firstAttribute="centerX" secondItem="q3A-RA-18i" secondAttribute="centerX" id="XWW-Bb-aKP"/>
+                        <constraint firstItem="yLU-nb-ZJD" firstAttribute="leading" secondItem="q3A-RA-18i" secondAttribute="leading" constant="28" id="hit-Kn-Xgc"/>
+                        <constraint firstItem="j10-uL-248" firstAttribute="leading" secondItem="q3A-RA-18i" secondAttribute="leading" constant="28" id="iYo-ax-t26"/>
+                        <constraint firstItem="m4Q-ZZ-gqu" firstAttribute="leading" secondItem="q3A-RA-18i" secondAttribute="leading" constant="28" id="mjE-TJ-rZM"/>
+                        <constraint firstItem="j10-uL-248" firstAttribute="top" secondItem="q3A-RA-18i" secondAttribute="top" constant="24" id="nfY-7u-cT8"/>
+                        <constraint firstItem="yLU-nb-ZJD" firstAttribute="top" secondItem="m4Q-ZZ-gqu" secondAttribute="bottom" constant="12" id="veb-qQ-fQU"/>
+                        <constraint firstItem="j10-uL-248" firstAttribute="centerX" secondItem="q3A-RA-18i" secondAttribute="centerX" id="xRh-4k-ZCn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Ivs-bR-uls"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="q3A-RA-18i" firstAttribute="centerX" secondItem="5WS-fu-bv0" secondAttribute="centerX" id="2zR-7F-6UC"/>
+                <constraint firstItem="q3A-RA-18i" firstAttribute="centerY" secondItem="5WS-fu-bv0" secondAttribute="centerY" id="YVJ-nS-tZB"/>
+                <constraint firstItem="q3A-RA-18i" firstAttribute="leading" secondItem="5WS-fu-bv0" secondAttribute="leading" id="qJL-bV-ubX"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="38"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

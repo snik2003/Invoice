@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ClientModel" representedClassName="ClientModel" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="clientId" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InvoiceModel" representedClassName="InvoiceModel" syncable="YES">
+        <attribute name="clientId" attributeType="String"/>
+        <attribute name="dueDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="invoiceId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="invoiceString" attributeType="String"/>
+        <attribute name="issueDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="items" attributeType="Binary"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="paidDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ItemModel" representedClassName="ItemModel" syncable="YES">
+        <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="discountType" optional="YES" attributeType="Integer 64" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="discountValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="itemId" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="quantity" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taxable" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="taxType" optional="YES" attributeType="Integer 64" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="taxValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="ClientModel" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="InvoiceModel" positionX="-63" positionY="72" width="128" height="149"/>
+        <element name="ItemModel" positionX="-63" positionY="18" width="128" height="179"/>
+    </elements>
+</model>

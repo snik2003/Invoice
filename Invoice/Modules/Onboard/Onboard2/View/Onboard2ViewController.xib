@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Onboard2ViewController" customModule="Invoice" customModuleProvider="target">
+            <connections>
+                <outlet property="iconView" destination="7pP-qi-5Xw" id="moh-4V-OX5"/>
+                <outlet property="nextButton" destination="mjD-xY-Dqw" id="bhk-J0-htg"/>
+                <outlet property="subtitleLabel" destination="ri6-h0-Uez" id="9J2-IA-ApZ"/>
+                <outlet property="titleLabel" destination="a75-4Y-phC" id="B5j-td-Ujd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pP-qi-5Xw">
+                    <rect key="frame" x="28" y="76" width="358" height="477.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard" translatesAutoresizingMaskIntoConstraints="NO" id="Zyu-zH-9MI">
+                            <rect key="frame" x="28" y="28" width="302" height="421.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Zyu-zH-9MI" firstAttribute="leading" secondItem="7pP-qi-5Xw" secondAttribute="leading" constant="28" id="1Dy-e4-UBs"/>
+                        <constraint firstAttribute="width" secondItem="7pP-qi-5Xw" secondAttribute="height" multiplier="3:4" id="GLn-Md-TMb"/>
+                        <constraint firstItem="Zyu-zH-9MI" firstAttribute="centerY" secondItem="7pP-qi-5Xw" secondAttribute="centerY" id="kBD-Za-th7"/>
+                        <constraint firstItem="Zyu-zH-9MI" firstAttribute="centerX" secondItem="7pP-qi-5Xw" secondAttribute="centerX" id="yCu-Jy-aHZ"/>
+                        <constraint firstItem="Zyu-zH-9MI" firstAttribute="top" secondItem="7pP-qi-5Xw" secondAttribute="top" constant="28" id="ykV-bk-KZH"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a75-4Y-phC" userLabel="Title Label">
+                    <rect key="frame" x="28" y="577.5" width="358" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="y6j-nY-Ftn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ri6-h0-Uez" userLabel="Subtitle Label">
+                    <rect key="frame" x="28" y="625.5" width="358" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Iyg-Y4-ure"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjD-xY-Dqw" userLabel="Next Button" customClass="PrimaryButton" customModule="Invoice" customModuleProvider="target">
+                    <rect key="frame" x="28" y="738" width="358" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="OdQ-m2-qKJ"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Next"/>
+                    <connections>
+                        <action selector="nextButtonAction" destination="-1" eventType="touchUpInside" id="NdC-51-X29"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7pP-qi-5Xw" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="18l-gQ-BIV"/>
+                <constraint firstItem="ri6-h0-Uez" firstAttribute="top" secondItem="a75-4Y-phC" secondAttribute="bottom" constant="16" id="L6e-lX-yRd"/>
+                <constraint firstItem="ri6-h0-Uez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="MrE-p2-rfi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mjD-xY-Dqw" secondAttribute="bottom" constant="72" id="UKc-KY-eDK"/>
+                <constraint firstItem="a75-4Y-phC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="Xgi-eh-L18"/>
+                <constraint firstItem="a75-4Y-phC" firstAttribute="top" secondItem="7pP-qi-5Xw" secondAttribute="bottom" constant="24" id="bNW-OH-05V"/>
+                <constraint firstItem="7pP-qi-5Xw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="ihz-WM-0V0"/>
+                <constraint firstItem="mjD-xY-Dqw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="lFR-P1-UYH"/>
+                <constraint firstItem="mjD-xY-Dqw" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lbE-V8-jE4"/>
+                <constraint firstItem="a75-4Y-phC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="osL-rm-G7A"/>
+                <constraint firstItem="7pP-qi-5Xw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="tlg-SR-BXU"/>
+                <constraint firstItem="ri6-h0-Uez" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wzj-Cf-yvh"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="30"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="onboard" width="482" height="728"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
